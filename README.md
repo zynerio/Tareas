@@ -54,6 +54,21 @@ Puedes importar tareas rápidamente subiendo un archivo de texto. Formatos sopor
 
 Consulta la sección de **Ayuda** en la aplicación para ver ejemplos detallados.
 
+## 🔄 Actualizaciones
+
+La aplicación comprueba automáticamente si existen nuevas versiones disponibles en GitHub y te mostrará una notificación en la barra superior si hay una actualización pendiente.
+
+### Pasos para actualizar:
+
+1.  **Copia de Seguridad**: Antes de nada, realiza una copia de seguridad de tu base de datos y de tus archivos (especialmente `app/Config/config.php`).
+2.  **Descargar**: Obtén la última versión desde la sección de [Releases en GitHub](https://github.com/zynerio/tareas/releases).
+3.  **Reemplazar Archivos**: Descomprime y sobrescribe los archivos de tu instalación con los nuevos.
+    *   **Importante**: Intenta conservar tu archivo `app/Config/config.php` existente para no perder la configuración de conexión. Si lo sobrescribes, simplemente tendrás que volver a introducir los datos de la base de datos.
+4.  **Actualizar Base de Datos**:
+    *   Navega a la carpeta de instalación en tu navegador (ej. `http://localhost/tareas/install`).
+    *   Verás un panel de "Actualización de esquema".
+    *   Haz clic en el botón **"Actualizar esquema"**. Esto añadirá cualquier tabla o columna nueva necesaria para la nueva versión sin borrar tus datos.
+
 ## 🤝 Contribuir
 
 ¡Las contribuciones son bienvenidas! Si encuentras un error o tienes una idea para mejorar, no dudes en abrir un Issue o enviar un Pull Request.

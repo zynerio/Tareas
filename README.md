@@ -2,7 +2,7 @@
 
 Un gestor de tareas moderno, eficiente y colaborativo, diseñado para organizar tus proyectos personales y profesionales. Desarrollado en PHP con una arquitectura MVC ligera y sin dependencias pesadas.
 
-![Zynerio Tareas Logo](public/img/zynerio_logo.png)
+![Zynerio Tareas Logo](/img/zynerio_logo.png)
 
 ## 🚀 Características Principales
 

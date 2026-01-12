@@ -36,7 +36,7 @@ Un gestor de tareas moderno, eficiente y colaborativo, diseñado para organizar 
     *   Importa el archivo `database.sql`.
     *   Configura manualmente `app/Config/config.php` (puedes usar el formato generado por el instalador).
 
-### Opción 2: Docker
+### Opción 2: Docker-> en desarrollo
 
 El proyecto incluye una configuración lista para Docker en la carpeta `Version docker`.
 

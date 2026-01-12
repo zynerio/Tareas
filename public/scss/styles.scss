@@ -1,0 +1,215 @@
+@use "sass:color";
+@use "../../palette.scss" as *;
+
+:root {
+  --bs-primary: #{$baltic-blue};
+  --bs-primary-rgb: #{color.channel($baltic-blue, "red")}, #{color.channel($baltic-blue, "green")}, #{color.channel($baltic-blue, "blue")};
+  --bs-secondary: #{$tropical-teal};
+  --bs-secondary-rgb: #{color.channel($tropical-teal, "red")}, #{color.channel($tropical-teal, "green")}, #{color.channel($tropical-teal, "blue")};
+  --bs-success: #{$emerald};
+  --bs-success-rgb: #{color.channel($emerald, "red")}, #{color.channel($emerald, "green")}, #{color.channel($emerald, "blue")};
+  --bs-info: #{$tropical-teal};
+  --bs-info-rgb: #{color.channel($tropical-teal, "red")}, #{color.channel($tropical-teal, "green")}, #{color.channel($tropical-teal, "blue")};
+  --bs-warning: #{$light-green};
+  --bs-warning-rgb: #{color.channel($light-green, "red")}, #{color.channel($light-green, "green")}, #{color.channel($light-green, "blue")};
+  --bs-danger: #{$baltic-blue};
+  --bs-danger-rgb: #{color.channel($baltic-blue, "red")}, #{color.channel($baltic-blue, "green")}, #{color.channel($baltic-blue, "blue")};
+  --brand-surface: #{$tea-green};
+}
+
+body {
+  background-color: var(--brand-surface, #f8f9fa);
+}
+
+.floating-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.task-item .subtasks-container .subtask-item {
+  margin-bottom: 8px;
+}
+
+.btn-secondary {
+  --bs-btn-bg: #{$tropical-teal};
+  --bs-btn-border-color: #{$tropical-teal};
+  --bs-btn-hover-bg: #{color.mix($tropical-teal, #000, 10%)};
+  --bs-btn-hover-border-color: #{color.mix($tropical-teal, #000, 10%)};
+  --bs-btn-active-bg: #{color.mix($tropical-teal, #000, 15%)};
+  --bs-btn-active-border-color: #{color.mix($tropical-teal, #000, 15%)};
+  --bs-btn-focus-shadow-rgb: #{color.channel($tropical-teal, "red")}, #{color.channel($tropical-teal, "green")}, #{color.channel($tropical-teal, "blue")};
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: #{$tropical-teal};
+  --bs-btn-border-color: #{$tropical-teal};
+  --bs-btn-hover-bg: #{$tropical-teal};
+  --bs-btn-hover-border-color: #{$tropical-teal};
+  --bs-btn-hover-color: #fff;
+  --bs-btn-focus-shadow-rgb: #{color.channel($tropical-teal, "red")}, #{color.channel($tropical-teal, "green")}, #{color.channel($tropical-teal, "blue")};
+}
+
+.btn-success {
+  --bs-btn-bg: #{$emerald};
+  --bs-btn-border-color: #{$emerald};
+  --bs-btn-hover-bg: #{color.mix($emerald, #000, 10%)};
+  --bs-btn-hover-border-color: #{color.mix($emerald, #000, 10%)};
+  --bs-btn-active-bg: #{color.mix($emerald, #000, 15%)};
+  --bs-btn-active-border-color: #{color.mix($emerald, #000, 15%)};
+  --bs-btn-focus-shadow-rgb: #{color.channel($emerald, "red")}, #{color.channel($emerald, "green")}, #{color.channel($emerald, "blue")};
+}
+
+.btn-outline-success {
+  --bs-btn-color: #{$emerald};
+  --bs-btn-border-color: #{$emerald};
+  --bs-btn-hover-bg: #{$emerald};
+  --bs-btn-hover-border-color: #{$emerald};
+  --bs-btn-hover-color: #000;
+  --bs-btn-focus-shadow-rgb: #{color.channel($emerald, "red")}, #{color.channel($emerald, "green")}, #{color.channel($emerald, "blue")};
+}
+
+.badge.text-bg-success {
+  background-color: #{$emerald} !important;
+  color: #000 !important;
+}
+
+.btn-primary {
+  --bs-btn-bg: #{$baltic-blue};
+  --bs-btn-border-color: #{$baltic-blue};
+  --bs-btn-hover-bg: #{color.mix($baltic-blue, #000, 10%)};
+  --bs-btn-hover-border-color: #{color.mix($baltic-blue, #000, 10%)};
+  --bs-btn-active-bg: #{color.mix($baltic-blue, #000, 15%)};
+  --bs-btn-active-border-color: #{color.mix($baltic-blue, #000, 15%)};
+  --bs-btn-focus-shadow-rgb: #{color.channel($baltic-blue, "red")}, #{color.channel($baltic-blue, "green")}, #{color.channel($baltic-blue, "blue")};
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #{$baltic-blue};
+  --bs-btn-border-color: #{$baltic-blue};
+  --bs-btn-hover-bg: #{$baltic-blue};
+  --bs-btn-hover-border-color: #{$baltic-blue};
+  --bs-btn-hover-color: #fff;
+  --bs-btn-focus-shadow-rgb: #{color.channel($baltic-blue, "red")}, #{color.channel($baltic-blue, "green")}, #{color.channel($baltic-blue, "blue")};
+}
+
+header.bg-primary {
+  background-image: #{$gradient-right};
+  background-color: #{$baltic-blue};
+}
+
+.message-bar {
+  border-radius: .25rem;
+  display: flex;
+  align-items: center;
+  padding: .75rem 1rem;
+}
+
+.inline-confirm {
+  font-size: .75rem;
+  vertical-align: middle;
+}
+
+.btn-info {
+  --bs-btn-bg: #{$tropical-teal};
+  --bs-btn-border-color: #{$tropical-teal};
+  --bs-btn-hover-bg: #{color.mix($tropical-teal, #000, 10%)};
+  --bs-btn-hover-border-color: #{color.mix($tropical-teal, #000, 10%)};
+  --bs-btn-active-bg: #{color.mix($tropical-teal, #000, 15%)};
+  --bs-btn-active-border-color: #{color.mix($tropical-teal, #000, 15%)};
+  --bs-btn-focus-shadow-rgb: #{color.channel($tropical-teal, "red")}, #{color.channel($tropical-teal, "green")}, #{color.channel($tropical-teal, "blue")};
+}
+
+.btn-outline-info {
+  --bs-btn-color: #{$tropical-teal};
+  --bs-btn-border-color: #{$tropical-teal};
+  --bs-btn-hover-bg: #{$tropical-teal};
+  --bs-btn-hover-border-color: #{$tropical-teal};
+  --bs-btn-hover-color: #fff;
+  --bs-btn-focus-shadow-rgb: #{color.channel($tropical-teal, "red")}, #{color.channel($tropical-teal, "green")}, #{color.channel($tropical-teal, "blue")};
+}
+
+.btn-warning {
+  --bs-btn-bg: #{$light-green};
+  --bs-btn-border-color: #{$light-green};
+  --bs-btn-hover-bg: #{color.mix($light-green, #000, 10%)};
+  --bs-btn-hover-border-color: #{color.mix($light-green, #000, 10%)};
+  --bs-btn-active-bg: #{color.mix($light-green, #000, 15%)};
+  --bs-btn-active-border-color: #{color.mix($light-green, #000, 15%)};
+  --bs-btn-focus-shadow-rgb: #{color.channel($light-green, "red")}, #{color.channel($light-green, "green")}, #{color.channel($light-green, "blue")};
+  color: #000;
+}
+
+.btn-outline-warning {
+  --bs-btn-color: #000;
+  --bs-btn-border-color: #{$light-green};
+  --bs-btn-hover-bg: #{$light-green};
+  --bs-btn-hover-border-color: #{$light-green};
+  --bs-btn-hover-color: #000;
+  --bs-btn-focus-shadow-rgb: #{color.channel($light-green, "red")}, #{color.channel($light-green, "green")}, #{color.channel($light-green, "blue")};
+}
+
+.badge.text-bg-info {
+  background-color: #{$tropical-teal} !important;
+  color: #fff !important;
+}
+
+.badge.text-bg-warning {
+  background-color: #{$light-green} !important;
+  color: #000 !important;
+}
+
+.alert-info {
+  --bs-alert-bg: #{color.mix($tropical-teal, #fff, 85%)};
+  --bs-alert-color: #{color.mix($tropical-teal, #000, 20%)};
+  --bs-alert-border-color: #{color.mix($tropical-teal, #fff, 70%)};
+}
+
+.alert-warning {
+  --bs-alert-bg: #{color.mix($light-green, #fff, 85%)};
+  --bs-alert-color: #{color.mix($light-green, #000, 30%)};
+  --bs-alert-border-color: #{color.mix($light-green, #fff, 70%)};
+}
+
+.alert-success {
+  --bs-alert-bg: #{color.mix($emerald, #fff, 85%)};
+  --bs-alert-color: #{color.mix($emerald, #000, 20%)};
+  --bs-alert-border-color: #{color.mix($emerald, #fff, 70%)};
+}
+
+.alert-danger {
+  --bs-alert-bg: #{color.mix($baltic-blue, #000, 20%)};
+  --bs-alert-color: #fff;
+  --bs-alert-border-color: #{color.mix($baltic-blue, #000, 35%)};
+}
+
+.badge.text-bg-danger {
+  background-color: #{$baltic-blue} !important;
+  color: #fff !important;
+}
+
+.btn-danger {
+  --bs-btn-bg: #{$baltic-blue};
+  --bs-btn-border-color: #{$baltic-blue};
+  --bs-btn-hover-bg: #{color.mix($baltic-blue, #000, 10%)};
+  --bs-btn-hover-border-color: #{color.mix($baltic-blue, #000, 10%)};
+  --bs-btn-active-bg: #{color.mix($baltic-blue, #000, 15%)};
+  --bs-btn-active-border-color: #{color.mix($baltic-blue, #000, 15%)};
+  --bs-btn-focus-shadow-rgb: #{color.channel($baltic-blue, "red")}, #{color.channel($baltic-blue, "green")}, #{color.channel($baltic-blue, "blue")};
+  color: #fff;
+}
+
+.btn-outline-danger {
+  --bs-btn-color: #{$baltic-blue};
+  --bs-btn-border-color: #{$baltic-blue};
+  --bs-btn-hover-bg: #{$baltic-blue};
+  --bs-btn-hover-border-color: #{$baltic-blue};
+  --bs-btn-hover-color: #fff;
+  --bs-btn-focus-shadow-rgb: #{color.channel($baltic-blue, "red")}, #{color.channel($baltic-blue, "green")}, #{color.channel($baltic-blue, "blue")};
+}

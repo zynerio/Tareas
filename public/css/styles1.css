@@ -1,0 +1,93 @@
+@media print {
+  /* Global Resets */
+  header.bg-primary, 
+  footer, 
+  .btn, 
+  .btn-group, 
+  .form-control, 
+  .form-select, 
+  .alert, 
+  .sel-col, 
+  #view-toggle-select, 
+  #backToTop,
+  .d-flex.align-items-center.gap-2 button {
+    display: none !important;
+  }
+  
+  /* Hide toolbars specifically */
+  .d-flex.justify-content-between.align-items-center.mb-3, /* Top toolbar */
+  .row.g-2.align-items-center.mb-2, /* Filter row */
+  .d-flex.justify-content-between.align-items-center.mt-2 /* Bottom toolbar */
+  {
+    display: none !important;
+  }
+  
+  /* Layout */
+  body, main, .container {
+    background-color: #fff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  main {
+    margin-top: 0 !important;
+  }
+
+  /* Table Reset - Override Mobile View */
+  .tasks-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+  
+  .tasks-table thead {
+    display: table-header-group !important;
+  }
+  
+  .tasks-table tbody tr {
+    display: table-row !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .tasks-table tbody td {
+    display: table-cell !important;
+    width: auto !important;
+    border: 1px solid #dee2e6 !important;
+    padding: 8px !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  /* Hide data-labels in print */
+  .tasks-table tbody td::before {
+    display: none !important;
+  }
+  
+  /* Column Sizing */
+  .tasks-table .name-col { width: 20% !important; }
+  .tasks-table .desc-col { width: 35% !important; }
+  .tasks-table .notes-col { width: 20% !important; }
+  .tasks-table .tags-col { width: 10% !important; text-align: center !important; }
+  .tasks-table .estado-col { width: 15% !important; text-align: center !important; }
+  
+  /* Colors */
+  .text-primary { color: #22577a !important; }
+  .border-primary { border-color: #22577a !important; }
+  
+  .badge {
+    border: 1px solid #ddd !important;
+    color: #000 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    text-shadow: none !important;
+  }
+  
+  /* Ensure header shows */
+  .d-print-block {
+    display: block !important;
+  }
+}

@@ -24,7 +24,7 @@ Un gestor de tareas moderno, eficiente y colaborativo, diseñado para organizar 
 
 ## 🛠️ Instalación
 
-### Opción 1: Instalación Manual (XAMPP/WAMP/LAMP)
+### Instalación Manual (XAMPP/WAMP/LAMP/VPS/Hosting compartido)
 
 1.  **Clonar/Descargar** el proyecto en tu carpeta pública (`htdocs`, `www`, etc.).
 2.  **Permisos**: Asegúrate de que la carpeta `storage/logs` tenga permisos de escritura.
@@ -35,14 +35,6 @@ Un gestor de tareas moderno, eficiente y colaborativo, diseñado para organizar 
     *   Crea una base de datos vacía.
     *   Importa el archivo `database.sql`.
     *   Configura manualmente `app/Config/config.php` (puedes usar el formato generado por el instalador).
-
-### Opción 2: Docker-> en desarrollo
-
-El proyecto incluye una configuración lista para Docker en la carpeta `Version docker`.
-
-1.  Navega a la carpeta `Version docker`.
-2.  Ejecuta `docker-compose up -d`.
-3.  Accede a `http://localhost:8000` (o el puerto configurado).
 
 ## 📖 Uso
 

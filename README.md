@@ -4,6 +4,13 @@ Un gestor de tareas moderno, eficiente y colaborativo, diseñado para organizar 
 
 <img width="1318" height="931" alt="Captura de pantalla 2026-02-26 125805" src="https://github.com/user-attachments/assets/c5f6e33e-95b1-469d-8860-befd120276b2" />
 
+## 🔄 **Actualización importante**
+Añadido sistema independiente de actualización. Aunque se incorpora a partir de ahora con todas las versiones se servirá de forma independiente. Con esta nueva herramienta se puede actualizar a una nueva versión, reparar la versión actual o hacer un downgrade a una versión anterior.
+Se recomienda usar esta herramienta para actualizar de versiones anteriores a la versión 1.1.9 para evitar errores durante la actualización.
+
+<img width="603" height="462" alt="Captura de pantalla 2026-02-28 102902" src="https://github.com/user-attachments/assets/8710dbc5-ca6f-4bc9-bdbe-8a00344fb50d" />
+
+
 ## 🚀 Características Principales
 
 *   **Gestión de Proyectos**: Crea múltiples proyectos, personalízalos con colores y mantén tu trabajo organizado.
